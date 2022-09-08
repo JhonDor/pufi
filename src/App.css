@@ -2,38 +2,242 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.articleImage{
+  display:flex;
+  width: 100%;
+  height: 100%;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-}
-
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.productInfo{
+ 
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+article.products {
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+  grid-template-rows: 500px;
+  align-items:center;
+  justify-content: space-evenly
+
+}
+article.products:nth-child(even) .articleImage{
+  order: 1;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.sliders{
+  position: relative;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.sliders button.icons {
+  position: absolute;
+  left: 400px;
+  color: white;
+  font-size:50px;
+  border-right: 2px solid white;
+  padding-right: 50px;
 }
+
+
+button{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    
+}
+.carousel-caption{
+  position: relative;
+}
+.carousel-caption h3{
+  -webkit-text-stroke: 0.5px black;
+  color:white;
+  position: absolute;
+  bottom: 500px;
+  width: 100%;
+  text-align: center;
+  
+}
+.carousel-caption p button{
+  position: absolute;
+  bottom:20vh;
+  right: 45vh;
+  width:10%;
+  text-align: center;
+  border: 1px solid white;
+  color:white;
+  
+}
+.sliders button.icons2 {
+  position: absolute;
+  left: 550px;
+  color: white;
+  font-size:50px;
+  border-right: 2px solid white;
+  padding-right: 50px;
+}
+
+.sliders button.icons3 {
+  position: absolute;
+  left: 700px;
+  color: white;
+  font-size:50px;
+  border-right: 2px solid white;
+  padding-right: 50px;
+}
+.sliders button.icons4 {
+  position: absolute;
+  left: 850px;
+  color: white;
+  font-size:50px;
+  border-right: 2px solid white;
+  padding-right: 50px;
+}
+
+.sliders p.tittle{
+  position: absolute;
+  left: 50px;
+  color: white;
+  font-size:50px;
+  -webkit-text-stroke: 0.5px black;
+  color:white;
+}
+.sliders p.menu1{
+  position: absolute;
+  right: 130px;
+  color: white;
+  font-size:16px;
+  margin-top: 30px;
+  padding-right: 5px;
+  color:white;
+  border-right: 1px solid white;
+}
+.sliders p.menu2{
+  position: absolute;
+  right: 20px;
+  color: white;
+  font-size:16px;
+  margin-top: 30px;
+  color:white;
+}
+.sliders p{
+  position:absolute;
+}
+
+.sliders .subTittle1{
+  position: absolute;
+  top: 77px;
+  left: 402px;
+  color: white;
+  font-size:15px;
+  border-right: 2px solid white;
+  padding-right: 50px;
+}
+
+.sliders .subTittle2{
+  position: absolute;
+  top: 77px;
+  left: 543px;
+  color: white;
+  font-size:15px;
+  border-right: 2px solid white;
+  padding-right: 50px;
+}
+.sliders .subTittle3{
+  position: absolute;
+  top: 77px;
+  left: 695px;
+  color: white;
+  font-size:15px;
+  border-right: 2px solid white;
+  padding-right: 35px;
+  
+}
+.sliders .subTittle4{
+  position: absolute;
+  top: 77px;
+  left: 855px;
+  color: white;
+  font-size:15px;
+  border-right: 2px solid white;
+  padding-right: 50px;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25%;
+  align-items: center;
+  justify-items: center; /* adjusted */
+  width: 25%;
+  margin-left:38%
+}
+img.grid-item{
+  display:flex;
+  width: 100%;
+  align-items:flex-start;
+}
+.media {
+  align-items: center;
+  margin-top:5%;
+}
+.media p{
+  font-size:25px;
+}
+.media span{
+  color:grey
+}
+.form-group{
+  display: inline-block;;
+  border:1px solid black;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+.form-group input{
+  border: hidden
+}
+.form-group input:focus {
+  outline: none;
+}
+ul {
+  margin-bottom: 15px;
+  display:block;
+}
+.footer{
+  display:flex;
+  justify-content: space-evenly;
+  
+}
+.footerList{
+  border-top: 3px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  margin-top:50px;
+  padding-top: 50px;
+  display:flex;
+  justify-content: space-evenly;
+}
+li{
+  list-style-type: none;
+  font-size: 10px;
+  text-align: left;
+}
+
+.footerList p{
+font-size: 20px;
+}
+.footerIcons{
+  font-size:30px
+}
+.copyright{
+  color:grey;
+  font-size:10px;
+  text-align:left
+}
+
